@@ -1,26 +1,110 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>mis trabajos de infovis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mis trabajos de InfoVis</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      margin: 30px 0 20px;
+    }
+
+    .grafico {
+      width: 100%;
+      margin: 0 auto 40px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .grafico object {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+    }
+
+    /* Flourish */
+    .flourish-embed {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px;
+      }
+
+      .grafico {
+        padding: 5px;
+        margin-bottom: 25px;
+      }
+
+      .grafico object {
+        min-height: 220px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Un gráfico bonito...</h1>
 
-  <div class="flourish-embed flourish-chart" data-src="visualisation/30757399"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30757399/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
-  
-  <object type="image/svg+xml" data="sankey.svg">
-    <!-- Fallback text or image if SVG isn't supported -->
-    <img src="sankey.svg" alt="">
-  </object>
+  <main>
 
-  <h1>Otro gráfico</h1>
-  <object type="image/svg+xml" data="bumpchart.svg">
-    <!-- Fallback text or image if SVG isn't supported -->
-    <img src="bumpchart.svg" alt="">
-  </object>
-  
-  
+    <h1>Un gráfico bonito...</h1>
+
+    <div class="grafico">
+      <div class="flourish-embed flourish-chart"
+           data-src="visualisation/30757399">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript>
+          <img
+            src="https://public.flourish.studio/visualisation/30757399/thumbnail"
+            width="100%"
+            alt="Gráfico de Flourish">
+        </noscript>
+      </div>
+    </div>
+
+    <h1>Diagrama Sankey</h1>
+
+    <div class="grafico">
+      <object type="image/svg+xml" data="sankey.svg">
+        <img src="sankey.svg" alt="Diagrama Sankey">
+      </object>
+    </div>
+
+    <h1>Otro gráfico</h1>
+
+    <div class="grafico">
+      <object type="image/svg+xml" data="bumpchart.svg">
+        <img src="bumpchart.svg" alt="Gráfico Bump Chart">
+      </object>
+    </div>
+
+  </main>
+
 </body>
 </html>
+```
