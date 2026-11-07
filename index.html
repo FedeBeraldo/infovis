@@ -45,9 +45,15 @@
       min-height: 300px;
     }
 
-    /* Flourish */
-    .flourish-embed {
-      width: 100%;
+    /* Datawrapper */
+    .datawrapper-container {
+        width: 100%;
+        min-height: 500px;
+    }
+    
+    .datawrapper-container iframe {
+        width: 100% !important;
+        border: none;
     }
 
     @media (max-width: 600px) {
@@ -56,14 +62,26 @@
       }
 
       .grafico {
-        padding: 5px;
-        margin-bottom: 25px;
+          width: 100%;
+          margin: 0 auto 40px;
+          background-color: white;
+          padding: 15px;
+          border-radius: 8px;
+          overflow: hidden;
       }
-
+      
+      /* Gráficos SVG */
       .grafico object {
-        min-height: 220px;
+          display: block;
+          width: 100%;
+          height: 550px;
+          border: none;
       }
-    }
+      
+      /* Flourish */
+      .flourish-embed {
+          width: 100%;
+      }
   </style>
 </head>
 
@@ -72,7 +90,7 @@
   <main>
 
     <div class="grafico">
-      <div style="min-height:429px" id="datawrapper-vis-c4onR">
+      <div id="datawrapper-vis-c4onR" class="datawrapper-container">
         <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/c4onR/embed.js" charset="utf-8" data-target="#datawrapper-vis-c4onR"></script>
         <noscript><img src="https://datawrapper.dwcdn.net/c4onR/full.png" alt="🍕 Pizza &amp;amp; toppings: a matter of sex (Range Plot)" />
         </noscript>
