@@ -1,0 +1,64 @@
+
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Streamgraphs</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f7f9fc;
+      color: #263238;
+    }
+
+    h1 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 15px;
+    }
+
+    li {
+      margin: 15px 0;
+    }
+
+    a {
+      color: #2457a7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Streamgraphs</h1>
+
+  <ul>
+    {% assign archivos = site.static_files | sort: "path" %}
+
+    {% for archivo in archivos %}
+      {% assign extension = archivo.path | split: "." | last %}
+
+      {% if archivo.path contains "visualizations/streamgraph/" and extension == "html" %}
+        <li>
+          <a href="{{ archivo.path | relative_url }}">
+            {{ archivo.path | split: "/" | last }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</body>
+</html>
