@@ -1,10 +1,10 @@
-
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Las conversaciones de una vida digital</title>
+  <title>¿Qué le pregunto a la IA?</title>
 
   <style>
     * {
@@ -25,19 +25,19 @@
     }
 
     header {
-      margin-bottom: 32px;
+      margin-bottom: 20px;
     }
 
-    h1 {
-      font-size: clamp(28px, 4vw, 44px);
-      margin-bottom: 12px;
-      font-weight: 700;
+    .project-icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
-    .subtitle {
-      color: #94A3B8;
-      font-size: 16px;
-      line-height: 1.6;
+    .project-icon img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
     }
 
     .chart-container {
@@ -53,17 +53,27 @@
       font-size: 12px;
       text-align: right;
     }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 24px 12px;
+      }
+
+      .project-icon img {
+        width: 36px;
+        height: 36px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <main>
+
     <header>
-      <h1>Las conversaciones de una vida digital</h1>
-      <p class="subtitle">
-        Cómo evolucionan mis intereses y consultas a lo largo del tiempo
-        · Noviembre 2024 – Noviembre 2026
-      </p>
+      <div class="project-icon">
+        <img src="infovis-chat/icons/chatgpt.png" alt="ChatGPT">
+      </div>
     </header>
 
     <section class="chart-container">
@@ -82,6 +92,8 @@
     <footer>
       Visualización interactiva · Made with Flourish
     </footer>
+
   </main>
 </body>
 </html>
+```
