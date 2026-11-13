@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Digital Story</title>
+  <style>
+    :root {
+      --bg-color: #121214;
+      --text-color: #f4f4f6;
+      --accent-color: #e0a96d;
+      --muted-color: #8c8c9a;
+      --card-bg: #1a1a1f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    header {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header h1 {
+      font-size. 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      color: var(--muted-color);
+      font-size: 1.25rem;
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    article section {
+      margin-bottom: 5rem;
+      opacity: 0.9;
+    }
+
+    .chapter-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent-color);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--muted-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--muted-color);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="chapter-label">Interactive Chronicle</span>
+    <h1>The Quiet Horizon</h1>
+    <p>A short narrative about time, distance, and the moments that linger long after the journey ends.</p>
+  </header>
+
+  <main>
+    <article>
+      <section>
+        <span class="chapter-label">Chapter I</span>
+        <h2>The Departure</h2>
+        <p>The morning arrived without fanfare. No dramatic sirens or sweeping winds—just a pale amber light stretching across the floorboards and the quiet hum of a town still half-asleep.</p>
+        <p>I packed only what was necessary: a worn notebook, a silver pocket watch that stopped ticking in nineteen-ninety-four, and a coat that still smelled faintly of rain.</p>
+        <blockquote>“Some roads do not ask where you are going; they simply wait to see how long you can walk.”</blockquote>
+      </section>
+
+      <section>
+        <span class="chapter-label">Chapter II</span>
+        <h2>Across the Ridge</h2>
+        <p>By noon, the valley gave way to jagged stone and sparse pine. Every step felt heavier than the last, yet the air grew sharper, clearing the fog from a mind cluttered with old obligations.</p>
+        <p>In the silence between footsteps, you begin to notice things you normally run past: the pattern of lichen on a boulder, the exact pitch of the wind sliding through the gorge.</p>
+      </section>
+
+      <section>
+        <span class="chapter-label">Chapter III</span>
+        <h2>The Arrival</h2>
+        <p>The cabin stood where the map said it would, leaning slightly into the slope like an old man resting his weight on a cane. The door unlocked with a dry, welcoming click.</p>
+        <p>Inside, the hearth was cold, ready for a spark.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>Crafted with HTML &amp; CSS &bull; 2026</p>
+  </footer>
+
+</body>
+</html>
