@@ -1,146 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Digital Story</title>
-  <style>
-    :root {
-      --bg-color: #121214;
-      --text-color: #f4f4f6;
-      --accent-color: #e0a96d;
-      --muted-color: #8c8c9a;
-      --card-bg: #1a1a1f;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Mis conversaciones con ChatGPT</title>
+
+  <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.7;
-      font-size: 1.1rem;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f8fa;
+      color: #242424;
+      line-height: 1.6;
     }
 
     header {
-      min-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 55px 20px 35px;
       text-align: center;
-      padding: 2rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
     }
 
     header h1 {
-      font-size. 3.5rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -1px;
     }
 
     header p {
-      color: var(--muted-color);
-      font-size: 1.25rem;
-      max-width: 600px;
+      max-width: 750px;
+      margin: auto;
+      color: #666;
+      font-size: 1.05rem;
     }
 
     main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 4rem 1.5rem;
+      width: min(1200px, 94%);
+      margin: 40px auto;
     }
 
-    article section {
-      margin-bottom: 5rem;
-      opacity: 0.9;
+    section {
+      margin-bottom: 55px;
+      padding: 30px;
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035);
     }
 
-    .chapter-label {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--accent-color);
-      margin-bottom: 0.5rem;
-      display: block;
+    section h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      line-height: 1.3;
     }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      font-weight: 700;
+    section .description {
+      margin: 0 0 25px;
+      color: #666;
     }
 
-    p {
-      margin-bottom: 1.5rem;
+    .visualization {
+      width: 100%;
+      overflow: hidden;
     }
 
-    blockquote {
-      border-left: 3px solid var(--accent-color);
-      padding-left: 1.5rem;
-      margin: 2rem 0;
-      font-style: italic;
-      color: var(--muted-color);
+    /* Datawrapper */
+    .datawrapper-container {
+      min-height: 392px;
     }
+
+    /* Flourish */
+    .flourish-container {
+      width: 100%;
+      min-height: 500px;
+    }
+
+    .flourish-container .flourish-embed {
+      width: 100%;
+    }
+
+    /* Tableau */
+    .tableau-container {
+      width: 100%;
+      min-height: 600px;
+    }
+
+    .tableauPlaceholder {
+      width: 100%;
+    }
+
+    .tableauPlaceholder object {
+      width: 100%;
+    }
+
+    /* RAWGraphs SVG */
+    .rawgraphs-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .rawgraphs-container object {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  aspect-ratio: 16 / 9;
+	  border: 0;
+	}
 
     footer {
+      padding: 25px 20px;
       text-align: center;
-      padding: 3rem 1.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--muted-color);
+      color: #777;
       font-size: 0.9rem;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.25rem;
+    @media (max-width: 650px) {
+      header {
+        padding: 40px 18px 28px;
+      }
+
+      main {
+        width: 96%;
+        margin: 20px auto;
+      }
+
+      section {
+        padding: 18px 14px;
+        margin-bottom: 25px;
+      }
+
+      .rawgraphs-container object {
+        min-height: 400px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <span class="chapter-label">Interactive Chronicle</span>
-    <h1>The Quiet Horizon</h1>
-    <p>A short narrative about time, distance, and the moments that linger long after the journey ends.</p>
+    <h1>Mis conversaciones con ChatGPT</h1>
+    <p>
+      Una exploración visual de mis interacciones:
+      temas, evolución temporal, patrones de actividad
+      y características de las conversaciones.
+    </p>
   </header>
 
   <main>
-    <article>
-      <section>
-        <span class="chapter-label">Chapter I</span>
-        <h2>The Departure</h2>
-        <p>The morning arrived without fanfare. No dramatic sirens or sweeping winds—just a pale amber light stretching across the floorboards and the quiet hum of a town still half-asleep.</p>
-        <p>I packed only what was necessary: a worn notebook, a silver pocket watch that stopped ticking in nineteen-ninety-four, and a coat that still smelled faintly of rain.</p>
-        <blockquote>“Some roads do not ask where you are going; they simply wait to see how long you can walk.”</blockquote>
-      </section>
 
-      <section>
-        <span class="chapter-label">Chapter II</span>
-        <h2>Across the Ridge</h2>
-        <p>By noon, the valley gave way to jagged stone and sparse pine. Every step felt heavier than the last, yet the air grew sharper, clearing the fog from a mind cluttered with old obligations.</p>
-        <p>In the silence between footsteps, you begin to notice things you normally run past: the pattern of lichen on a boulder, the exact pitch of the wind sliding through the gorge.</p>
-      </section>
+    <!-- 1. DATAWRAPPER -->
+    <section>
+      <h2>¿En qué momentos de la semana interactúo más con ChatGPT?</h2>
+      <p class="description">
+        Distribución de la actividad según el día de la semana
+        y la franja horaria.
+      </p>
 
-      <section>
-        <span class="chapter-label">Chapter III</span>
-        <h2>The Arrival</h2>
-        <p>The cabin stood where the map said it would, leaning slightly into the slope like an old man resting his weight on a cane. The door unlocked with a dry, welcoming click.</p>
-        <p>Inside, the hearth was cold, ready for a spark.</p>
-      </section>
-    </article>
+      <div class="visualization datawrapper-container">
+        <div style="min-height:392px" id="datawrapper-vis-0KjCY">
+          <script
+            type="text/javascript"
+            defer
+            src="https://datawrapper.dwcdn.net/0KjCY/embed.js"
+            charset="utf-8"
+            data-target="#datawrapper-vis-0KjCY">
+          </script>
+          <noscript>
+            <img
+              src="https://datawrapper.dwcdn.net/0KjCY/full.png"
+              alt="Actividad por día y franja horaria">
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FLOURISH -->
+    <section>
+      <h2>¿Cómo evolucionan los temas de mis conversaciones?</h2>
+      <p class="description">
+        Evolución temporal de las principales áreas temáticas
+        de mis interacciones.
+      </p>
+
+      <div class="visualization flourish-container">
+        <div
+          class="flourish-embed flourish-chart"
+          data-src="visualisation/30913455">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript>
+            <img
+              src="https://public.flourish.studio/visualisation/30913455/thumbnail"
+              width="100%"
+              alt="Evolución temporal de las áreas temáticas">
+          </noscript>
+        </div>
+
+        <div
+          class="flourish-fallback"
+          data-for="visualisation/30913455">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. RAWGRAPHS -->
+    <section>
+      <h2>¿Qué subcategorías predominan en cada área temática?</h2>
+      <p class="description">
+        Distribución de las conversaciones por área y sus
+        principales subcategorías.
+      </p>
+
+      <div class="visualization rawgraphs-container">
+        <object
+          data="visualizations/rawgraphs/rawgraph%20-%20edit_v3.svg"
+          type="image/svg+xml"
+          aria-label="Gráfico de barras apiladas por área y subcategoría">
+          <p>
+            No se pudo cargar el gráfico SVG.
+            <a href="visualizations/rawgraphs/rawgraph%20-%20edit_v3.svg">
+              Abrir gráfico
+            </a>
+          </p>
+        </object>
+      </div>
+    </section>
+
+    <!-- 4. TABLEAU -->
+    <section>
+      <h2>¿Qué áreas concentran las conversaciones más extensas?</h2>
+      <p class="description">
+        Relación entre cantidad de conversaciones, mensajes
+        promedio y extensión de los intercambios.
+      </p>
+
+      <div class="visualization tableau-container">
+        <div
+          class="tableauPlaceholder"
+          id="viz1794778370901"
+          style="position: relative">
+
+          <noscript>
+            <a href="#">
+              <img
+                alt="Gráfico de conversaciones por área temática"
+                src="https://public.tableau.com/static/images/mi/misChats/Sheet1/1_rss.png"
+                style="border: none">
+            </a>
+          </noscript>
+
+          <object class="tableauViz" style="display:none;">
+            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
+            <param name="embed_code_version" value="3">
+            <param name="site_root" value="">
+            <param name="name" value="misChats/Sheet1">
+            <param name="tabs" value="no">
+            <param name="toolbar" value="yes">
+            <param name="static_image" value="https://public.tableau.com/static/images/mi/misChats/Sheet1/1.png">
+            <param name="animate_transition" value="yes">
+            <param name="display_static_image" value="yes">
+            <param name="display_spinner" value="yes">
+            <param name="display_overlay" value="yes">
+            <param name="display_count" value="yes">
+            <param name="language" value="en-US">
+          </object>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <p>Crafted with HTML &amp; CSS &bull; 2026</p>
+    Visualización de datos personales · Mis conversaciones con ChatGPT
   </footer>
+
+  <!-- Tableau JavaScript API -->
+  <script type="text/javascript">
+    var divElement = document.getElementById('viz1794778370901');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    function resizeTableau() {
+      vizElement.style.width = '100%';
+      vizElement.style.height =
+        Math.max(600, divElement.offsetWidth * 0.75) + 'px';
+    }
+
+    resizeTableau();
+    window.addEventListener('resize', resizeTableau);
+
+    var scriptElement = document.createElement('script');
+    scriptElement.src =
+      'https://public.tableau.com/javascripts/api/viz_v1.js';
+
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 
 </body>
 </html>
