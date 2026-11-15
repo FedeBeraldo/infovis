@@ -1,0 +1,104 @@
+﻿area,subcategoria,conversaciones
+Tecnología y Electrónica,"Computación, software y dispositivos",135
+Tecnología y Electrónica,"Electricidad, electrónica y automatización",48
+Tecnología y Electrónica,"Informática, redes y dispositivos",18
+Tecnología y Electrónica,"Informática, redes y electrónica",14
+Tecnología y Electrónica,Redes y telecomunicaciones,11
+Tecnología y Electrónica,Hardware y dispositivos,9
+Tecnología y Electrónica,Ofimática y software,9
+Tecnología y Electrónica,Electrónica y electricidad,5
+Tecnología y Electrónica,Otros dispositivos y tecnología,3
+Tecnología y Electrónica,Automoción y maniobras,1
+Tecnología y Electrónica,Electricidad,1
+Tecnología y Electrónica,Herramientas digitales,1
+Tecnología y Electrónica,Robótica y sistemas operativos,1
+Tecnología y Electrónica,Servicios digitales,1
+Data Science y Programación,"Python, R y lenguajes",105
+Data Science y Programación,"Programación, algoritmos y análisis de datos",30
+Data Science y Programación,Programación y análisis de datos,22
+Data Science y Programación,Programación y algoritmos,13
+Data Science y Programación,"Datos, BI y arquitectura",4
+Salud y Medicina,"Síntomas, enfermedades y tratamientos",116
+Salud y Medicina,Salud y tratamientos,25
+Salud y Medicina,Salud general,15
+Salud y Medicina,"Salud, síntomas y tratamientos",14
+Salud y Medicina,Medicina estética,1
+Salud y Medicina,Odontología,1
+Física Médica y Radioterapia,Gestión y sistemas de salud radiológica,35
+Física Médica y Radioterapia,"Infraestructura, blindajes y seguridad",35
+Física Médica y Radioterapia,Equipamiento y aceleradores,27
+Física Médica y Radioterapia,Dosimetría y planificación,26
+Física Médica y Radioterapia,Equipamiento y diagnóstico por imágenes,20
+Física Médica y Radioterapia,Equipamiento y práctica clínica,11
+Física Médica y Radioterapia,Equipamiento e instalaciones,5
+Física Médica y Radioterapia,Radioprotección y física,2
+Cocina y Alimentación,Recetas y preparación,128
+Cocina y Alimentación,"Alimentos, cocina y recetas",11
+Cocina y Alimentación,Preparación y conservación,11
+Cocina y Alimentación,Alimentos y preparación,9
+Hogar y Mantenimiento,"Reparaciones, instalaciones y servicios",104
+Hogar y Mantenimiento,Reparaciones y mantenimiento,18
+Hogar y Mantenimiento,Mantenimiento doméstico,15
+Hogar y Mantenimiento,Reparaciones y mantenimiento doméstico,11
+Hogar y Mantenimiento,Agua y purificación,1
+Hogar y Mantenimiento,Calefacción,1
+Hogar y Mantenimiento,Construcción,1
+Hogar y Mantenimiento,Control de plagas,1
+Ciencia y Cultura,"Física, astronomía y ciencias naturales",84
+Ciencia y Cultura,"Ciencia, matemáticas y conocimiento",27
+Ciencia y Cultura,Física y ciencias naturales,8
+Ciencia y Cultura,Ambiente y ciudad,5
+Ciencia y Cultura,Matemática y unidades,4
+Ciencia y Cultura,Historia y cultura,2
+Ciencia y Cultura,Ambiente y residuos,1
+Ciencia y Cultura,Filosofía y ciencia,1
+Ciencia y Cultura,Física,1
+Ciencia y Cultura,Química y análisis,1
+Ciencia y Cultura,Religión y textos,1
+Ciencia y Cultura,Sociedad y características humanas,1
+Finanzas e Inversiones,"Mercados, acciones y bonos",71
+Finanzas e Inversiones,"Bancos, pagos e inversiones",21
+Finanzas e Inversiones,Bancos y finanzas,15
+Finanzas e Inversiones,Banca y operaciones,6
+Finanzas e Inversiones,Mercados y economía,2
+"Legal, Trámites y Administración","Derecho, documentación y trámites",83
+"Legal, Trámites y Administración",Normativa y gestiones,5
+"Legal, Trámites y Administración","Trámites, normativa y empleo",5
+"Legal, Trámites y Administración",Seguridad y cuestiones legales,4
+"Legal, Trámites y Administración",Trámites y normativa,3
+"Legal, Trámites y Administración",Documentación y pasaporte,1
+Comunicación y Escritura,"Redacción, traducción y presentaciones",62
+Comunicación y Escritura,Lengua y redacción,13
+Comunicación y Escritura,"Lengua, redacción y documentos",9
+Comunicación y Escritura,Redacción y traducción,3
+Cultura y Entretenimiento,"Música, cine, series y arte",41
+Cultura y Entretenimiento,"Música, cine y ocio",10
+Cultura y Entretenimiento,Medios y entretenimiento,2
+Cultura y Entretenimiento,"Música, cine, humor y ocio",2
+Cultura y Entretenimiento,Transmisiones y medios,1
+Compras y Consumo,"Productos, servicios y comparativas",44
+Compras y Consumo,Productos y comparativas,4
+Compras y Consumo,Productos y consumo,3
+Compras y Consumo,Aseo personal,1
+Actualidad y Política,"Política, sociedad y noticias",41
+Actualidad y Política,Noticias y sociedad,4
+Actualidad y Política,Política y actualidad,2
+Actualidad y Política,Apuestas y actualidad,1
+Actualidad y Política,Personas y actualidad,1
+Docencia y Educación,Enseñanza y evaluación,32
+Docencia y Educación,Educación y formación,7
+Docencia y Educación,Instituciones y formación,4
+Docencia y Educación,Celebraciones escolares,1
+"Familia, Crianza y Mascotas","Infancia, crianza y vida familiar",34
+"Familia, Crianza y Mascotas","Niños, mascotas y familia",3
+"Familia, Crianza y Mascotas",Actividades y crianza,2
+Turismo y Viajes,"Viajes, transporte y alojamiento",36
+Turismo y Viajes,Información y transporte,1
+Deportes,Fútbol y otros deportes,25
+Deportes,Fútbol y deportes,3
+Deportes,Deportes y actividad física,2
+Consorcios e Inmuebles,"Consorcios, edificios y propiedades",6
+Consorcios e Inmuebles,Administración y expensas,2
+General / Sin contexto,Conversación general o título insuficiente,6
+General / Sin contexto,Consulta de término,1
+General / Sin contexto,Uso del asistente,1
