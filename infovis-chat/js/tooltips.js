@@ -22,30 +22,15 @@
     // Relaciona las etiquetas abreviadas del SVG
     // con los nombres completos del CSV.
     const CATEGORY_ALIASES = {
-        "tecnología y electrónica":
-            "Tecnología y Electrónica",
-
-        "ds & programación":
-            "Data Science y Programación",
-
-        "salud & medicina":
-            "Salud y Medicina",
-
-        "fm & rt":
-            "Física Médica y Radioterapia",
-
-        "cocina y alimentación":
-            "Cocina y Alimentación",
-
-        "hogar y mantenimiento":
-            "Hogar y Mantenimiento",
-
-        "ciencia y cultura":
-            "Ciencia y Cultura",
-
-        "finanzas e inversiones":
-            "Finanzas e Inversiones"
-    };
+		"tecnologia y electronica": "Tecnología y Electrónica",
+		"ds & programacion": "Data Science y Programación",
+		"salud & medicina": "Salud y Medicina",
+		"fm & rt": "Física Médica y Radioterapia",
+		"cocina y alimentacion": "Cocina y Alimentación",
+		"hogar y mantenimiento": "Hogar y Mantenimiento",
+		"ciencia y cultura": "Ciencia y Cultura",
+		"finanzas e inversiones": "Finanzas e Inversiones"
+	};
 
 
     // --------------------------------------------------
