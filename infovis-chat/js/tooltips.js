@@ -145,9 +145,26 @@
     }
 
 
-    function getCategoryFromLabel(label) {
-        return CATEGORY_ALIASES[normalize(label)] ?? null;
-    }
+    function normalizeLabel(text) {
+    return text
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .toLowerCase();
+}
+
+	function getCategoryFromLabel(label) {
+		const normalizedLabel = normalizeLabel(label);
+
+		for (const [alias, area] of Object.entries(CATEGORY_ALIASES)) {
+			if (normalizeLabel(alias) === normalizedLabel) {
+				return area;
+			}
+		}
+
+		return null;
+	}
 
 
     function findNearestCategory(element, categories, svg) {
