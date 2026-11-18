@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #10a37f;
+    --green-dark: #087e63;
+    --green-light: #e8f5f0;
+
+    --text: #242424;
+    --muted: #666;
+    --border: #e5e7eb;
+
+    --top1: #E6550D;
+    --top2: #FDAE6B;
+    --top3: #FEE6CE;
+    --others: #6366F1;
+
+    --blue: #3976b9;
+    --yellow: #b68d17;
+    --orange: #e67e22;
+    --teal: #39a69b;
+    --gray: #45464a;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    background: #f7f8fa;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    padding: 45px 20px 35px;
+    text-align: center;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.brand-emoji {
+    font-size: 0.65em;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.brand-mark {
+    width: 0.85em;
+    height: 0.85em;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -1.3px;
+    line-height: 1.2;
+}
+
+.brand-chat {
+    color: var(--green-dark);
+}
+
+header p {
+    max-width: 750px;
+    margin: 12px auto 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+/* MAIN */
+
+main {
+    width: min(1200px, 94%);
+    margin: 35px auto;
+}
+
+/* SECCIONES */
+
+section {
+    margin-bottom: 35px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035);
+}
+
+section h2 {
+    margin: 0 0 10px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-weight: 800;
+    letter-spacing: -.5px;
+    line-height: 1.3;
+}
+
+section .description {
+    margin: 0 0 20px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+section .description .question {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--text, #1f2937);
+    /* Usa tu variable de texto principal o un gris oscuro por defecto */
+    background: rgba(230, 57, 70, 0.08);
+    /* Sutil resaltado cálido opcional */
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+section .description .question::after {
+    content: "";
+    display: inline-block;
+    width: 1.15em;
+    height: 1.15em;
+    margin-left: 5px;
+    vertical-align: -0.2em;
+    /* Alinea la punta del pin con la línea base del texto */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../icons/question-mark.svg");
+}
+
+
+/* IDENTIFICACIÓN DE CAPÍTULOS */
+
+.chapter-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 10px;
+    color: var(--green-dark);
+    font-size: .72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.chapter-number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--green-light);
+    font-size: .7rem;
+}
+
+/* OVERVIEW */
+
+.overview {
+    text-align: center;
+    padding: 35px 30px;
+    background:
+    radial-gradient(ellipse at 85% 10%,
+        rgba(16, 163, 127, .08),
+        transparent 35%),
+    #ffffff;
+}
+
+.overview h2 {
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    margin-bottom: 10px;
+}
+
+.overview-intro {
+    max-width: 750px;
+    margin: 0 auto 28px;
+    color: var(--muted);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    padding: 22px 15px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #fff;
+}
+
+.stat-icon {
+    color: var(--green);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.stat-number {
+    display: block;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.stat-label {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: .88rem;
+    font-weight: 600;
+}
+
+.overview-footer {
+    margin: 25px auto 0;
+    max-width: 750px;
+    color: var(--muted);
+    font-size: .92rem;
+}
+
+.overview-footer strong {
+    color: var(--green-dark);
+}
+
+/* NARRATIVA */
+
+.story {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+    padding: 11px 15px;
+    background: #f7f8f9;
+    border-left: 3px solid var(--green);
+    border-radius: 0 8px 8px 0;
+    color: #50535a;
+    font-size: .9rem;
+    line-height: 1.55;
+}
+
+.story p {
+    margin: 0;
+}
+
+.story-icon {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+/*.story-icon-inline {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 0 3px;
+}*/
+
+.story-icon-inline {
+    width: 1.1em;
+    height: 1.1em;
+    object-fit: contain;
+    vertical-align: -0.2em;
+    margin-left: 4px;
+}
+
+/* Iconografía */
+
+.youtube-icon {
+    color: #FF0000;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.cat-rojo {
+    color: #e32636;
+    font-weight: 700;
+}
+
+.cat-rojo::after {
+    content: " ❤️";
+    font-size: 0.85em;
+    vertical-align: middle;
+}
+
+/* COLORES TEMÁTICOS */
+
+/* Colores de top3 categorías */
+
+.highlight-top1 {
+    color: var(--top1);
+    font-weight: 800;
+}
+
+.highlight-top2 {
+    color: #dc8b45;
+    font-weight: 800;
+}
+
+.highlight-top3 {
+    color: #c48b57;
+    font-weight: 800;
+}
+
+
+
+/* Estilo común para todas las categorías */
+.cat-tecnologia,
+.cat-programacion,
+.cat-salud,
+.cat-fisica,
+.cat-cocina,
+.cat-hogar,
+.cat-ciencia,
+.cat-finanzas {
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Colores de categorías - Tableau Automatic */
+.cat-deportes {
+    color: #FF9D9A;
+    background-color: rgba(255, 157, 154, 0.13);
+}
+
+.cat-docencia {
+    color: #79706E;
+    background-color: rgba(121, 112, 110, 0.10);
+}
+
+/* Colores de categorías - Flourish Alternate */
+.cat-tecnologia {
+    color: #135ae1;
+    background-color: rgba(19, 90, 225, 0.10);
+}
+
+.cat-programacion {
+    color: #f54e8b;
+    background-color: rgba(245, 78, 139, 0.10);
+}
+
+.cat-salud {
+    color: #2197ff;
+    background-color: rgba(33, 151, 255, 0.10);
+}
+
+.cat-fisica {
+    color: #f2b90f;
+    background-color: rgba(242, 185, 15, 0.12);
+}
+
+.cat-cocina {
+    color: #9852d9;
+    background-color: rgba(152, 82, 217, 0.10);
+}
+
+.cat-hogar {
+    color: #058896;
+    background-color: rgba(5, 136, 150, 0.10);
+}
+
+.cat-ciencia {
+    color: #fa6502;
+    background-color: rgba(250, 101, 2, 0.10);
+}
+
+.cat-finanzas {
+    color: #09aa64;
+    background-color: rgba(9, 170, 100, 0.10);
+}
+
+
+.highlight-gray {
+    color: var(--gray);
+    font-weight: 800;
+}
+
+.highlight-others {
+    color: var(--others);
+    font-weight: 800;
+}
+
+/* VISUALIZACIONES
+    Se conservan los comportamientos originales.
+    No se fuerzan alturas de viewport ni recortes.
+*/
+
+.visualization {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* DATAWRAPPER */
+
+.datawrapper-container {
+    min-height: 392px;
+}
+
+/* FLOURISH */
+
+.flourish-container {
+    width: 100%;
+    min-height: 500px;
+}
+
+.flourish-container .flourish-embed {
+    width: 100%;
+}
+
+/* TABLEAU */
+
+.tableau-container {
+    width: 100%;
+    min-height: 600px;
+}
+
+.tableauPlaceholder {
+    width: 100%;
+}
+
+.tableauPlaceholder object {
+    width: 100%;
+}
+
+/* RAWGRAPHS SVG */
+
+.rawgraphs-container {
+    width: 100%;
+    text-align: center;
+}
+
+.rawgraphs-container object {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px 20px;
+    text-align: center;
+    color: #777;
+    font-size: .9rem;
+}
+
+footer strong {
+    color: var(--green-dark);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+    header {
+    padding: 35px 18px 28px;
+    }
+
+    .brand {
+    gap: 8px;
+    }
+
+    .brand-mark {
+    width: 28px;
+    height: 28px;
+    }
+
+    header h1 {
+    font-size: 1.65rem;
+    }
+
+    main {
+    width: 96%;
+    margin: 20px auto;
+    }
+
+    section {
+    padding: 18px 14px;
+    margin-bottom: 25px;
+    }
+
+    .stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+
+    .stat-card {
+    padding: 15px;
+    }
+
+    .story {
+    align-items: flex-start;
+    font-size: .84rem;
+    }
+
+    .rawgraphs-container object {
+    min-height: 400px;
+    }
+}

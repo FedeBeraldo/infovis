@@ -1,261 +1,293 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Mis conversaciones con ChatGPT</title>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+    
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f8fa;
-      color: #242424;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 55px 20px 35px;
-      text-align: center;
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    header h1 {
-      margin: 0 0 12px;
-      font-size: clamp(2rem, 4vw, 3rem);
-      letter-spacing: -1px;
-    }
-
-    header p {
-      max-width: 750px;
-      margin: auto;
-      color: #666;
-      font-size: 1.05rem;
-    }
-
-    main {
-      width: min(1200px, 94%);
-      margin: 40px auto;
-    }
-
-    section {
-      margin-bottom: 55px;
-      padding: 30px;
-      background: #ffffff;
-      border: 1px solid #e8e8e8;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035);
-    }
-
-    section h2 {
-      margin: 0 0 10px;
-      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-      line-height: 1.3;
-    }
-
-    section .description {
-      margin: 0 0 25px;
-      color: #666;
-    }
-
-    .visualization {
-      width: 100%;
-      overflow: hidden;
-    }
-
-    /* Datawrapper */
-    .datawrapper-container {
-      min-height: 392px;
-    }
-
-    /* Flourish */
-    .flourish-container {
-      width: 100%;
-      min-height: 500px;
-    }
-
-    .flourish-container .flourish-embed {
-      width: 100%;
-    }
-
-    /* Tableau */
-    .tableau-container {
-      width: 100%;
-      min-height: 600px;
-    }
-
-    .tableauPlaceholder {
-      width: 100%;
-    }
-
-    .tableauPlaceholder object {
-      width: 100%;
-    }
-
-    /* RAWGraphs SVG */
-    .rawgraphs-container {
-      width: 100%;
-      text-align: center;
-    }
-
-    .rawgraphs-container object {
-	  display: block;
-	  width: 100%;
-	  height: auto;
-	  aspect-ratio: 16 / 9;
-	  border: 0;
-	}
-
-    footer {
-      padding: 25px 20px;
-      text-align: center;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 650px) {
-      header {
-        padding: 40px 18px 28px;
-      }
-
-      main {
-        width: 96%;
-        margin: 20px auto;
-      }
-
-      section {
-        padding: 18px 14px;
-        margin-bottom: 25px;
-      }
-
-      .rawgraphs-container object {
-        min-height: 400px;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
+  <!-- HEADER -->
+
   <header>
-    <h1>Mis conversaciones con ChatGPT</h1>
+    <div class="brand">
+     
+      <h1>
+          Mis conversaciones con
+          <span class="brand-chat">ChatGPT</span>
+          <span class="brand-emoji">🤖</span>
+          <img class="brand-mark" src="icons/openai.svg" alt="Logo OpenAI">
+      </h1>
+      
+    </div>
+
     <p>
       Una exploración visual de mis interacciones:
-      temas, evolución temporal, patrones de actividad
-      y características de las conversaciones.
+      intereses, evolución temporal, patrones de actividad
+      y características de mis conversaciones.
     </p>
   </header>
 
+
   <main>
 
-    <!-- 1. DATAWRAPPER -->
-    <section>
-      <h2>¿En qué momentos de la semana interactúo más con ChatGPT?</h2>
-      <p class="description">
-        Distribución de la actividad según el día de la semana
-        y la franja horaria.
+    <!-- 01. OVERVIEW -->
+
+    <section class="overview">
+
+      <div class="chapter-label" style="justify-content:center">
+        <span class="chapter-number">01</span>
+        Una mirada al conjunto
+      </div>
+
+      <h2>Mi universo de conversaciones</h2>
+
+      <p class="overview-intro">
+        Un registro de preguntas, ideas, proyectos,
+        aprendizajes y alguna que otra consulta doméstica.
+        Así se ve mi historia con ChatGPT.
       </p>
 
-      <div class="visualization datawrapper-container">
-        <div style="min-height:392px" id="datawrapper-vis-0KjCY">
-          <script
-            type="text/javascript"
-            defer
-            src="https://datawrapper.dwcdn.net/0KjCY/embed.js"
-            charset="utf-8"
-            data-target="#datawrapper-vis-0KjCY">
-          </script>
-          <noscript>
-            <img
-              src="https://datawrapper.dwcdn.net/0KjCY/full.png"
-              alt="Actividad por día y franja horaria">
-          </noscript>
+      <div class="stats">
+
+        <div class="stat-card">
+          <div class="stat-icon">◉</div>
+          <span class="stat-number">1837</span>
+          <span class="stat-label">Conversaciones</span>
         </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">☰</div>
+          <span class="stat-number">16912</span>
+          <span class="stat-label">Mensajes intercambiados</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">◷</div>
+          <span class="stat-number">24</span>
+          <span class="stat-label">Meses de historia</span>
+        </div>
+
       </div>
+
+      <p class="overview-footer">
+        Con <strong>ChatGPT</strong>, una pregunta puede convertirse
+        en un proyecto, una clase o una nueva curiosidad.
+        Esta es la historia detrás de esas conversaciones...
+      </p>
+
     </section>
 
-    <!-- 2. FLOURISH -->
+
+    <!-- 02. MIS DOS MUNDOS: RAWGRAPHS -->
+
     <section>
-      <h2>¿Cómo evolucionan los temas de mis conversaciones?</h2>
-      <p class="description">
-        Evolución temporal de las principales áreas temáticas
-        de mis interacciones.
-      </p>
 
-      <div class="visualization flourish-container">
-        <div
-          class="flourish-embed flourish-chart"
-          data-src="visualisation/30913455">
-          <script src="https://public.flourish.studio/resources/embed.js"></script>
-          <noscript>
-            <img
-              src="https://public.flourish.studio/visualisation/30913455/thumbnail"
-              width="100%"
-              alt="Evolución temporal de las áreas temáticas">
-          </noscript>
-        </div>
-
-        <div
-          class="flourish-fallback"
-          data-for="visualisation/30913455">
-        </div>
+      <div class="chapter-label">
+        <span class="chapter-number">02</span>
+        Mis intereses
       </div>
-    </section>
 
-    <!-- 3. RAWGRAPHS -->
-    <section>
-      <h2>¿Qué subcategorías predominan en cada área temática?</h2>
+      <h2>Dos mundos, muchas versiones de mí...</h2>
+
       <p class="description">
-        Distribución de las conversaciones por área y sus
-        principales subcategorías.
+        <span class="question">
+          ¿Qué me pregunto? ¿En qué pienso? ¿Qué desvela mis horas?
+        </span>
       </p>
+
+      <div class="story">
+        <p>
+          Mi ChatGPT personal es un reflejo de mis verdaderos intereses
+          e inquietudes. En el lado más profesional, la
+          <img class="story-icon-inline" src="visualizations/rawgraphs/svgs/electronics-svgrepo-com.svg"
+            alt="Electrónica">
+          <span class="highlight-top1">computación y los dispositivos electrónicos</span>
+          me recuerdan a mi yo ingeniero; las charlas sobre
+          <img class="story-icon-inline" src="visualizations/rawgraphs/svgs/programming-monitor-svgrepo-com.svg"
+            alt="programación">
+          <span class="highlight-top2">programación, algoritmos y bases de datos</span>,
+          a mi yo docente y programador... ¿o quizás a mi yo alumno?
+        </p>
+      </div>
+
+      <div class="story">
+
+
+        <p>
+          En el otro lado, bastante más revelador, mi yo padre de familia
+          se pregunta: <strong>¿Qué cocino hoy?</strong>
+
+          <img class="story-icon-inline" src="visualizations/rawgraphs/svgs/utensils-svgrepo-com.svg" alt="Cocina">
+
+          o <strong>¿Cómo arreglo esto o aquello?</strong>
+
+          <img class="story-icon-inline"
+            src="visualizations/rawgraphs/svgs/equipment-maintenance-screwdriver-tools-wrench-svgrepo-com.svg"
+            alt="Mantenimiento">
+        </p>
+
+      </div>
 
       <div class="visualization rawgraphs-container">
-        <object
-		  id="grafico-rawgraphs"
-          data="visualizations/rawgraphs/rawgraph%20-%20edit_v3.svg"
-          type="image/svg+xml"
+
+        <object id="grafico-rawgraphs" data="visualizations/rawgraphs/rawgraph%20-%20edit_v3.svg" type="image/svg+xml"
           aria-label="Gráfico de barras apiladas por área y subcategoría">
+
           <p>
             No se pudo cargar el gráfico SVG.
             <a href="visualizations/rawgraphs/rawgraph%20-%20edit_v3.svg">
               Abrir gráfico
             </a>
           </p>
+
         </object>
+
       </div>
+
     </section>
 
-    <!-- 4. TABLEAU -->
+
+    <!-- 03. EVOLUCIÓN TEMPORAL: FLOURISH -->
+
     <section>
-      <h2>¿Qué áreas concentran las conversaciones más extensas?</h2>
+
+      <div class="chapter-label">
+        <span class="chapter-number">03</span>
+        Mi historia en el tiempo
+      </div>
+
+      <h2>Pero está claro que no siempre fui tan equilibrado...</h2>
+
       <p class="description">
-        Relación entre cantidad de conversaciones, mensajes
-        promedio y extensión de los intercambios.
+        Mis intereses también tienen temporadas, protagonistas
+        y cambios de rumbo.
+        <span class="question">¿Qué hay detrás de estos vaivenes?</span>
       </p>
 
+      <div class="story">
+        <p>
+          Si bien mi yo
+          <span class="cat-tecnologia">tecnológico y electrónico</span>
+          siempre estuvo presente, mi yo físico arrancó con mi trabajo actual,
+          después de las vacaciones de febrero de 2025.
+          Era ese yo ansioso que quería saberlo todo antes de hacer.
+          Pronto descubrió algunas limitaciones de la 🤖 en cuestiones de
+          <span class="cat-fisica">Física Médica y Radioterapia</span>.
+        </p>
+      </div>
+
+      <div class="story">
+        <p>
+          En julio de ese año, un mini descanso del receso invernal
+          me llevó a explorar podcasts de divulgación científica:
+          <span class="cat-ciencia">Ciencia y Cultura</span>,
+          cosmología y física cuántica.
+          Las últimas vacaciones, en enero de 2026, me encontraron
+          en un nuevo hogar y con mucho por hacer.
+          Descubrí que para varios temas de
+          <span class="cat-hogar">Hogar y Mantenimiento</span>
+          ¡ya no necesitaba mirar tutoriales de <i class="fa-brands fa-youtube youtube-icon"></i>!
+          Qué vacaciones divertidas... 🥱
+        </p>
+      </div>
+
+      <div class="visualization flourish-container">
+
+        <div class="flourish-embed flourish-chart" data-src="visualisation/30913455">
+
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+
+          <noscript>
+            <img src="https://public.flourish.studio/visualisation/30913455/thumbnail" width="100%"
+              alt="Evolución temporal de las áreas temáticas">
+          </noscript>
+
+        </div>
+
+        <div class="flourish-fallback" data-for="visualisation/30913455">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- 04. PROFUNDIDAD: TABLEAU -->
+
+    <section>
+
+      <div class="chapter-label">
+        <span class="chapter-number">04</span>
+        La profundidad de las charlas
+      </div>
+
+      <h2>Aún así, mis conversaciones no son todas iguales...</h2>
+
+      <p class="description">
+        Hay preguntas al paso y otras que parecen no tener final.
+        <span class="question">
+          ¿Qué temáticas concentran los intercambios más extremos?
+        </span>
+      </p>
+
+      <div class="story">
+        <p>
+          En <i>preguntas al paso</i>, la categoría
+          <span class="cat-deportes">Deportes</span>
+          se lleva el galardón. Seguramente un
+          <em>
+              «¿Ganó el
+              <span class="cat-rojo">Rojo</span>
+              <img class="story-icon-inline"
+                  src="icons/cai-logo.svg"
+                  alt="Escudo de Independiente">
+              hoy?»
+          </em>
+          me deprime tanto que no llego al segundo o tercer prompt.
+        </p>
+      </div>
+
+      <div class="story">
+        <p>
+          En el otro extremo, mis conversaciones de
+          <span class="cat-docencia">Docencia y Educación</span>
+          pecan de charlatanas y obsesivas.
+          Algún malintencionado podría sugerir que corrijo con 🤖
+          los extensos programas hechos con 🤖 de mis alumnos.
+          No teman: es un doble riesgo romper la Matrix y que me banee OpenAI.
+          Lo más probable es que se trate de un outlier y deba sacarlo.
+        </p>
+      </div>
+
       <div class="visualization tableau-container">
-        <div
-          class="tableauPlaceholder"
-          id="viz1794778370901"
-          style="position: relative">
+
+        <div class="tableauPlaceholder" id="viz1794778370901" style="position: relative">
 
           <noscript>
             <a href="#">
-              <img
-                alt="Gráfico de conversaciones por área temática"
-                src="https://public.tableau.com/static/images/mi/misChats/Sheet1/1_rss.png"
-                style="border: none">
+              <img alt="Gráfico de conversaciones por área temática"
+                src="https://public.tableau.com/static/images/mi/misChats/Sheet1/1_rss.png" style="border: none">
             </a>
           </noscript>
 
           <object class="tableauViz" style="display:none;">
+
             <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
             <param name="embed_code_version" value="3">
             <param name="site_root" value="">
@@ -269,39 +301,97 @@
             <param name="display_overlay" value="yes">
             <param name="display_count" value="yes">
             <param name="language" value="en-US">
+
           </object>
+
         </div>
+
       </div>
+
+    </section>
+
+
+    <!-- 05. DÍAS Y HORARIOS: DATAWRAPPER -->
+
+    <section>
+
+      <div class="chapter-label">
+        <span class="chapter-number">05</span>
+        Mis hábitos
+      </div>
+
+      <h2>Además, tengo mis días y horarios...</h2>
+
+      <p class="description">
+        No solamente importa de qué hablamos:
+        también...
+        <span class="question">
+          ¿cuándo aparece la necesidad de consultar?
+        </span>
+      </p>
+
+      <div class="story">
+        <p>
+          Evidentemente ya no me divierto como a mis veintitantos.
+          Sí: los viernes a la noche, después de cenar 🍽️, en lugar de estar en Tinder
+          (ejem... quiero decir, no sé muy bien qué hace la gente que
+          sí se divierte un viernes a la noche 💃🕺), estoy con 🤖.
+          Tendría que investigar de qué van mis charlas en esos horarios
+          donde otros duermen o se divierten.
+          También me intriga descubrir de qué cornos converso con el chat
+          los miércoles temprano. Se ve que dejo a los 👦👧 en el jardín
+          y me pregunto cómo meterle pasión a mi vida. 🥱
+        </p>
+      </div>
+
+      <div class="story">
+        <p>
+          Pensando en los días 📅, mis <strong>martes</strong> son algo más intensos.
+          Entre trabajo y doble jornada de clases, debe ser el día en que
+          le pregunto al chat cosas para no hacer el ridículo con mis alumnos.
+          Finalmente descubro que mis alumnos no preguntan nada,
+          pero repito el ciclo como si albergara alguna esperanza de cambio.
+          Los <strong>jueves</strong>, en cambio, como doy clases en el turno
+          nocturno, no me da tiempo ni ganas de agarrar el 📱
+          Ese día debo 🎸 un poco más las clases.
+        </p>
+      </div>
+
+      <div class="visualization datawrapper-container">
+
+        <div style="min-height:392px" id="datawrapper-vis-0KjCY">
+
+          <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/0KjCY/embed.js" charset="utf-8"
+            data-target="#datawrapper-vis-0KjCY">
+            </script>
+
+          <noscript>
+            <img src="https://datawrapper.dwcdn.net/0KjCY/full.png" alt="Actividad por día y franja horaria">
+          </noscript>
+
+        </div>
+
+      </div>
+
     </section>
 
   </main>
 
+
   <footer>
-    Visualización de datos personales · Mis conversaciones con ChatGPT
+    Una visualización de datos personales ·
+    <strong>Mis conversaciones con ChatGPT</strong>
   </footer>
 
-  <!-- Tableau JavaScript API -->
-  <script type="text/javascript">
-    var divElement = document.getElementById('viz1794778370901');
-    var vizElement = divElement.getElementsByTagName('object')[0];
 
-    function resizeTableau() {
-      vizElement.style.width = '100%';
-      vizElement.style.height =
-        Math.max(600, divElement.offsetWidth * 0.75) + 'px';
-    }
+  <!-- TABLEAU JAVASCRIPT API -->
 
-    resizeTableau();
-    window.addEventListener('resize', resizeTableau);
+  <script src="js/tableau-api.js" defer></script>
 
-    var scriptElement = document.createElement('script');
-    scriptElement.src =
-      'https://public.tableau.com/javascripts/api/viz_v1.js';
+  <!-- TOOLTIP SVG -->
 
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
-  
   <script src="js/tooltips.js" defer></script>
 
 </body>
+
 </html>
