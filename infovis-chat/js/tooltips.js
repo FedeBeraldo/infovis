@@ -1,7 +1,6 @@
 
 (() => {
     "use strict";
-    console.log("TOOLTIPS.JS: archivo cargado correctamente");
     // --------------------------------------------------
     // CONFIGURACIÓN
     // --------------------------------------------------
@@ -22,15 +21,15 @@
     // Relaciona las etiquetas abreviadas del SVG
     // con los nombres completos del CSV.
     const CATEGORY_ALIASES = {
-		"tecnologia y electronica": "Tecnología y Electrónica",
-		"ds & programacion": "Data Science y Programación",
-		"salud & medicina": "Salud y Medicina",
-		"fm & rt": "Física Médica y Radioterapia",
-		"cocina y alimentacion": "Cocina y Alimentación",
-		"hogar y mantenimiento": "Hogar y Mantenimiento",
-		"ciencia y cultura": "Ciencia y Cultura",
-		"finanzas e inversiones": "Finanzas e Inversiones"
-	};
+        "tecnologia y electronica": "Tecnología y Electrónica",
+        "ds & programacion": "Data Science y Programación",
+        "salud & medicina": "Salud y Medicina",
+        "fm & rt": "Física Médica y Radioterapia",
+        "cocina y alimentacion": "Cocina y Alimentación",
+        "hogar y mantenimiento": "Hogar y Mantenimiento",
+        "ciencia y cultura": "Ciencia y Cultura",
+        "finanzas e inversiones": "Finanzas e Inversiones"
+    };
 
 
     // --------------------------------------------------
@@ -120,7 +119,7 @@
         return point.matrixTransform(matrix);
     }
 
-   function createCustomTooltip() {
+    function createCustomTooltip() {
 
         const existingTooltip = document.getElementById("custom-svg-tooltip");
 
@@ -164,25 +163,25 @@
 
 
     function normalizeLabel(text) {
-    return text
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .replace(/\s+/g, " ")
-        .trim()
-        .toLowerCase();
-}
+        return text
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/\s+/g, " ")
+            .trim()
+            .toLowerCase();
+    }
 
-	function getCategoryFromLabel(label) {
-		const normalizedLabel = normalizeLabel(label);
+    function getCategoryFromLabel(label) {
+        const normalizedLabel = normalizeLabel(label);
 
-		for (const [alias, area] of Object.entries(CATEGORY_ALIASES)) {
-			if (normalizeLabel(alias) === normalizedLabel) {
-				return area;
-			}
-		}
+        for (const [alias, area] of Object.entries(CATEGORY_ALIASES)) {
+            if (normalizeLabel(alias) === normalizedLabel) {
+                return area;
+            }
+        }
 
-		return null;
-	}
+        return null;
+    }
 
 
     function findNearestCategory(element, categories, svg) {
@@ -216,12 +215,12 @@
     }
 
 
-   function createCustomTooltip() {
-    const tooltip = document.createElement("div");
+    function createCustomTooltip() {
+        const tooltip = document.createElement("div");
 
-    tooltip.id = "custom-svg-tooltip";
+        tooltip.id = "custom-svg-tooltip";
 
-    tooltip.style.cssText = `
+        tooltip.style.cssText = `
         position: fixed;
         display: none;
         z-index: 99999;
@@ -236,10 +235,10 @@
         pointer-events: none;
     `;
 
-    document.body.appendChild(tooltip);
+        document.body.appendChild(tooltip);
 
-    return tooltip;
-}
+        return tooltip;
+    }
 
 
     function escapeHTML(value) {
@@ -253,24 +252,24 @@
     }
 
     function positionTooltip(tooltip, event) {
-    const offset = 14;
+        const offset = 14;
 
-    const rect = tooltip.getBoundingClientRect();
+        const rect = tooltip.getBoundingClientRect();
 
-    let x = event.clientX + offset;
-    let y = event.clientY + offset;
+        let x = event.clientX + offset;
+        let y = event.clientY + offset;
 
-    if (x + rect.width > window.innerWidth - 10) {
-        x = event.clientX - rect.width - offset;
+        if (x + rect.width > window.innerWidth - 10) {
+            x = event.clientX - rect.width - offset;
+        }
+
+        if (y + rect.height > window.innerHeight - 10) {
+            y = event.clientY - rect.height - offset;
+        }
+
+        tooltip.style.left = `${Math.max(10, x)}px`;
+        tooltip.style.top = `${Math.max(10, y)}px`;
     }
-
-    if (y + rect.height > window.innerHeight - 10) {
-        y = event.clientY - rect.height - offset;
-    }
-
-    tooltip.style.left = `${Math.max(10, x)}px`;
-    tooltip.style.top = `${Math.max(10, y)}px`;
-}
 
     function addTooltip(element, data, tooltip) {
         const colors = {
@@ -346,17 +345,17 @@
     }
 
 
-function showCustomTooltip(tooltip, data, event) {
-    const colors = {
-        "Top 1": "#E6550D",
-        "Top 2": "#FDAE6B",
-        "Top 3": "#FEE6CE",
-        "Otros": "#6366F1"
-    };
+    function showCustomTooltip(tooltip, data, event) {
+        const colors = {
+            "Top 1": "#E6550D",
+            "Top 2": "#FDAE6B",
+            "Top 3": "#FEE6CE",
+            "Otros": "#6366F1"
+        };
 
-    const color = colors[data.grupo] || "#A5B4FC";
+        const color = colors[data.grupo] || "#A5B4FC";
 
-    tooltip.innerHTML = `
+        tooltip.innerHTML = `
         <div style="
             display:flex;
             justify-content:space-between;
@@ -425,25 +424,25 @@ function showCustomTooltip(tooltip, data, event) {
         </div>
     `;
 
-    tooltip.style.display = "block";
+        tooltip.style.display = "block";
 
-    const offset = 14;
-    const rect = tooltip.getBoundingClientRect();
+        const offset = 14;
+        const rect = tooltip.getBoundingClientRect();
 
-    let x = event.clientX + offset;
-    let y = event.clientY + offset;
+        let x = event.clientX + offset;
+        let y = event.clientY + offset;
 
-    if (x + rect.width > window.innerWidth - 10) {
-        x = event.clientX - rect.width - offset;
+        if (x + rect.width > window.innerWidth - 10) {
+            x = event.clientX - rect.width - offset;
+        }
+
+        if (y + rect.height > window.innerHeight - 10) {
+            y = event.clientY - rect.height - offset;
+        }
+
+        tooltip.style.left = `${Math.max(10, x)}px`;
+        tooltip.style.top = `${Math.max(10, y)}px`;
     }
-
-    if (y + rect.height > window.innerHeight - 10) {
-        y = event.clientY - rect.height - offset;
-    }
-
-    tooltip.style.left = `${Math.max(10, x)}px`;
-    tooltip.style.top = `${Math.max(10, y)}px`;
-}
 
 
     // --------------------------------------------------
@@ -812,5 +811,5 @@ function showCustomTooltip(tooltip, data, event) {
     } else {
         console.error(`No se encontró el objeto SVG: ${SVG_OBJECT_ID}`);
     }
-    
+
 })();
